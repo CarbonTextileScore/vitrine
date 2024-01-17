@@ -58,13 +58,16 @@ header a:hover {
     animation: rotate-marquee 9s linear infinite;
 }
 
+.marquee-text:last-child {
+    animation: none; /* Désactive l'animation pour le dernier élément */
+}
+
 @keyframes rotate-marquee {
     0% {
         transform: translateX(-100%);
     }
-
     100% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 }
 
