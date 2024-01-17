@@ -73,3 +73,31 @@ body {
     font-family: 'Michroma', sans-serif;
     overflow-x:hidden;
 }
+
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*height: 100vh;*/
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Taille du cercle */
+    height: 300px; /* Taille du cercle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    margin-bottom: 10px;
+    width: 50px; /* Taille de l'image d'icône */
+    height: 50px; /* Taille de l'image d'icône */
+}
