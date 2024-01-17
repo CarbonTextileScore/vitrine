@@ -1,0 +1,51 @@
+
+/* Defining font */
+@font-face {
+    font-family: 'Michroma';
+    src: url('font/Michroma-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    padding-left: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F8F8F8;
+    font-family: 'Michroma', sans-serif;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: red;
+}
+
+body {
+    background-color: #F8F8F8;
+    font-family: 'Michroma', sans-serif;
+}
