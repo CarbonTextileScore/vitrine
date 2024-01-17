@@ -95,8 +95,8 @@ body {
 }
 
 .text-container {
-    width: 50%;
-    padding : 10%;
+    width: 45%;
+    padding : 5%;
 }
 
 .text-container h3 {
@@ -151,4 +151,17 @@ body {
 
 .picture:hover .overlay {
     opacity: 1;
+}
+/* end of image gallery */
+
+.worldMap-container img {
+    width: 100%;
+    height: auto;
+}
+
+.worldMap-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width : 45%;
 }
