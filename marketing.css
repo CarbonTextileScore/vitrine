@@ -19,7 +19,7 @@ header {
     height: 50px;
     line-height: 50px;
     background-color: #F8F8F8;
-    
+
     font-family: 'Michroma', sans-serif;
 }
 
@@ -75,14 +75,25 @@ header a:hover {
 }
 
 body {
-    background-color: #F8F8F8;
+    /*background-color: #F8F8F8;*/
     font-family: 'Michroma', sans-serif;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
-    background-image: url("assets/marketing-background.svg");
+    /*
+    background-image: url("assets/cool-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(2px);
+    */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #F8F8F8;
 }
 
 .h2 {
@@ -101,7 +112,8 @@ body {
     text-align: left;
     width: 50%;
     padding: 60px;
-    max-width: 800px; /* Ajustez la largeur maximale selon vos besoins */
+    max-width: 800px;
+    /* Ajustez la largeur maximale selon vos besoins */
 }
 
 .content-img {
@@ -110,7 +122,8 @@ body {
     padding: 20px;
     height: 100%;
     display: flex;
-    align-items: center; /* Centrer l'image verticalement */
+    align-items: center;
+    /* Centrer l'image verticalement */
 }
 
 .content-img img {
@@ -119,7 +132,8 @@ body {
     object-fit: cover;
     display: block;
     /*margin-right: 40px; /* Marge à droite */
-    margin-left: 180px; /* Ajuste la marge à gauche pour décaler l'image */
+    margin-left: 180px;
+    /* Ajuste la marge à gauche pour décaler l'image */
 }
 
 
@@ -137,8 +151,10 @@ body {
     margin: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Taille du cercle */
-    height: 300px; /* Taille du cercle */
+    width: 300px;
+    /* Taille du cercle */
+    height: 300px;
+    /* Taille du cercle */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,8 +163,10 @@ body {
 
 .circle img {
     margin-bottom: 10px;
-    width: 50px; /* Taille de l'image d'icône */
-    height: 50px; /* Taille de l'image d'icône */
+    width: 50px;
+    /* Taille de l'image d'icône */
+    height: 50px;
+    /* Taille de l'image d'icône */
 }
 
 .stats-container {
@@ -166,7 +184,8 @@ body {
     margin: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Définir une largeur fixe pour toutes les cartes */
+    width: 300px;
+    /* Définir une largeur fixe pour toutes les cartes */
 }
 
 .stat-card img {
@@ -181,7 +200,8 @@ body {
     padding: 20px;
     height: 100%;
     display: flex;
-    align-items: center; /* Centrer l'image verticalement */
+    align-items: center;
+    /* Centrer l'image verticalement */
 }
 
 .content-img-maquette img {
@@ -190,7 +210,8 @@ body {
     object-fit: cover;
     display: block;
     /*margin-right: 40px; /* Marge à droite */
-    margin-left: 5px; /* Ajuste la marge à gauche pour décaler l'image */
+    margin-left: 5px;
+    /* Ajuste la marge à gauche pour décaler l'image */
 }
 
 .sanction {
@@ -198,7 +219,8 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     background-color: #ffe4e1;
-    align-items: center; /* Aligner les éléments au centre verticalement */
+    align-items: center;
+    /* Aligner les éléments au centre verticalement */
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 60px;
@@ -206,15 +228,18 @@ body {
 }
 
 .sanction h2 {
-    margin-bottom: 10px; /* Espace entre le titre et le paragraphe */
+    margin-bottom: 10px;
+    /* Espace entre le titre et le paragraphe */
 }
 
 .log-container {
-    margin-right: 20px; /* Espace entre l'image et le texte */
+    margin-right: 20px;
+    /* Espace entre l'image et le texte */
 }
 
 .log {
-    max-width: 50px; /* Ajustez la taille de l'icône selon vos besoins */
+    max-width: 50px;
+    /* Ajustez la taille de l'icône selon vos besoins */
     height: auto;
 }
 
@@ -224,7 +249,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F8F8F8;;
+    background-color: #F8F8F8;
+    ;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -246,14 +272,18 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1500px;
-    height: 200px; /* Adjust the height as needed */
+    height: 200px;
+    /* Adjust the height as needed */
     margin: 0 auto;
     padding: 20px;
-    margin-bottom: 20px; /* Add margin at the bottom */
+    margin-bottom: 20px;
+    /* Add margin at the bottom */
 }
 
 .content {
     width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .content p {
@@ -263,7 +293,8 @@ body {
 
 .cont-img {
     width: 50%;
-    flex-grow: 1; /* Make .cont-img take up available space */
+    flex-grow: 1;
+    /* Make .cont-img take up available space */
     position: relative;
 }
 
@@ -284,18 +315,24 @@ body {
 
 .cont-img .img2 {
     z-index: 20;
-    margin-top: -60px; /* Adjust the margin to control the superposition */
+    margin-top: -60px;
+    /* Adjust the margin to control the superposition */
     margin-left: 80px;
 }
 
 .slogan {
     text-align: center;
     margin-top: 400px;
-    background-color: #a72424; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    border-radius: 10px; /* Rayon des coins pour obtenir un fond arrondi */
-    padding: 10px; /* Espace à l'intérieur du cadre */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre portée */
+    background-color: #a72424;
+    /* Couleur de fond */
+    color: white;
+    /* Couleur du texte */
+    border-radius: 10px;
+    /* Rayon des coins pour obtenir un fond arrondi */
+    padding: 10px;
+    /* Espace à l'intérieur du cadre */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Ombre portée */
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -303,7 +340,8 @@ body {
 
 .slogan p {
     font-weight: bold;
-    font-size: 24px; /* Ajustez la taille de la police selon vos besoins */
+    font-size: 24px;
+    /* Ajustez la taille de la police selon vos besoins */
 }
 
 
@@ -315,4 +353,3 @@ footer {
     width: 100%;
     margin-top: 50px;
 }
-
