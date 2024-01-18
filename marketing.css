@@ -1,0 +1,278 @@
+/* Defining font */
+@font-face {
+    font-family: 'Michroma';
+    src: url('font/Michroma-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    padding-left: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F8F8F8;
+    
+    font-family: 'Michroma', sans-serif;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #BF0B1A;
+}
+
+.ministere-container {
+    margin-left: auto;
+    padding-right: 5%;
+}
+
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #DBF227;
+    color: black;
+}
+
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: rotate-marquee 9s linear infinite;
+}
+
+@keyframes rotate-marquee {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+body {
+    background-color: #F8F8F8;
+    
+    background: rgb(223, 60, 74);
+    background: linear-gradient(180deg, rgba(223,60,74,1) 0%, rgba(248,248,248,1) 100%);
+    
+    background-size: cover;
+    font-family: 'Michroma', sans-serif;
+    overflow-x:hidden;
+}
+
+.frame {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 650px;
+    box-sizing: border-box;
+}
+
+.content-text {
+    text-align: left;
+    width: 50%;
+    padding: 60px;
+    max-width: 800px; /* Ajustez la largeur maximale selon vos besoins */
+}
+
+.content-img {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Centrer l'image verticalement */
+}
+
+.content-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    /*margin-right: 40px; /* Marge à droite */
+    margin-left: 180px; /* Ajuste la marge à gauche pour décaler l'image */
+}
+
+
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*height: 100vh;*/
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Taille du cercle */
+    height: 300px; /* Taille du cercle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    margin-bottom: 10px;
+    width: 50px; /* Taille de l'image d'icône */
+    height: 50px; /* Taille de l'image d'icône */
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Définir une largeur fixe pour toutes les cartes */
+}
+
+.stat-card img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.sanction {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #ffe4e1;
+    align-items: center; /* Aligner les éléments au centre verticalement */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sanction h2 {
+    margin-bottom: 10px; /* Espace entre le titre et le paragraphe */
+}
+
+
+.log-container {
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.log {
+    max-width: 50px; /* Ajustez la taille de l'icône selon vos besoins */
+    height: auto;
+}
+
+
+.last-paragraph {
+    max-width: 1500px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F8F8;;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.last-paragraph img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 70px;
+}
+
+.last-paragraph p {
+    flex: 1;
+    line-height: 1.5;
+}
+
+.framy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    height: 200px; /* Adjust the height as needed */
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.content {
+    width: 50%;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cont-img {
+    width: 50%;
+    flex-grow: 1; /* Make .cont-img take up available space */
+    position: relative;
+}
+
+/* For superposing the two images */
+.cont-img img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    margin-left: 400px;
+    top: 0;
+    left: 0;
+}
+
+/* Adjust the z-index to control the stacking order */
+.cont-img .img1 {
+    z-index: 10;
+}
+
+.cont-img .img2 {
+    z-index: 20;
+    margin-top: -60px; /* Adjust the margin to control the superposition */
+    margin-left: 80px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 400px;
+}
+
