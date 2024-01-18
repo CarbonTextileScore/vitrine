@@ -67,10 +67,6 @@ body {
     margin-left: 5%;
 }
 
-.content h3 {
-    /*margin-left : 5%;*/
-}
-
 .squares-container {
     display: flex;
     flex-wrap: wrap;
@@ -180,3 +176,4 @@ body {
     width : 70%;
     padding: 5%;
 }
+
