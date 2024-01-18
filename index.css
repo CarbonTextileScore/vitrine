@@ -99,8 +99,8 @@ h1 {
     align-items: center;
     grid-template-columns: 1fr 2fr;
     column-gap: 3%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 img {
@@ -113,12 +113,16 @@ img {
     background-color: rgb(12, 222, 124);
     height: 12ex;
     width: 40%;
+    margin-top: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .left {
     clip-path: polygon(0 0, 100% 100%, 0 100%);
     float: left;
     shape-outside: polygon(0 0, 100% 100%, 0 100%);
+    
 }
 
 .right {
@@ -145,3 +149,4 @@ img {
     padding-left: 10%;
     padding-right: 10%;
 }
+
