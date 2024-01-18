@@ -13,16 +13,13 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     top: 0;
-    z-index: 0;
+    z-index: 1;
     left: 0;
     right: 0;
     height: 50px;
     line-height: 50px;
     background-color: #F8F8F8;
-    background-image: url('./assets/backgroud.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    
     font-family: 'Michroma', sans-serif;
 }
 
@@ -48,12 +45,17 @@ header a:hover {
     color: #BF0B1A;
 }
 
+.ministere-container {
+    margin-left: auto;
+    padding-right: 5%;
+}
+
 .marquee {
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
-    background-color: #BF0B1A;
-    color: white;
+    background-color: #DBF227;
+    color: black;
 }
 
 .marquee-text {
@@ -68,15 +70,16 @@ header a:hover {
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 }
 
 body {
     background-color: #F8F8F8;
-    background-image: url('./assets/backgroud.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    
+    background: rgb(223, 60, 74);
+    background: linear-gradient(180deg, rgba(223,60,74,1) 0%, rgba(248,248,248,1) 100%);
+    
     background-size: cover;
     font-family: 'Michroma', sans-serif;
     overflow-x:hidden;
