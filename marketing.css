@@ -19,6 +19,10 @@ header {
     height: 50px;
     line-height: 50px;
     background-color: #F8F8F8;
+    background-image: url('./assets/backgroud.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: 'Michroma', sans-serif;
 }
 
@@ -70,6 +74,10 @@ header a:hover {
 
 body {
     background-color: #F8F8F8;
+    background-image: url('./assets/backgroud.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: 'Michroma', sans-serif;
     overflow-x:hidden;
 }
@@ -104,7 +112,7 @@ body {
     object-fit: cover;
     display: block;
     /*margin-right: 40px; /* Marge à droite */
-    margin-left: 140px; /* Ajuste la marge à gauche pour décaler l'image */
+    margin-left: 180px; /* Ajuste la marge à gauche pour décaler l'image */
 }
 
 
@@ -161,9 +169,10 @@ body {
 
 .sanction {
     display: flex;
-    max-width: 1200px; /* Ajustez la largeur maximale selon vos besoins */
-    margin: 0 auto; /* Centrer horizontalement */
+    max-width: 1300px;
+    margin: 0 auto;
     background-color: #ffe4e1;
+    align-items: center; /* Aligner les éléments au centre verticalement */
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 60px;
@@ -174,9 +183,6 @@ body {
     margin-bottom: 10px; /* Espace entre le titre et le paragraphe */
 }
 
-.sanction p {
-    margin-top: 40px; /* Espace entre le titre et le paragraphe */
-}
 
 .log-container {
     margin-right: 20px; /* Espace entre l'image et le texte */
@@ -186,6 +192,7 @@ body {
     max-width: 50px; /* Ajustez la taille de l'icône selon vos besoins */
     height: auto;
 }
+
 
 .last-paragraph {
     max-width: 1500px;
@@ -210,11 +217,59 @@ body {
     line-height: 1.5;
 }
 
+.framy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    height: 200px; /* Adjust the height as needed */
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.content {
+    width: 50%;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cont-img {
+    width: 50%;
+    flex-grow: 1; /* Make .cont-img take up available space */
+    position: relative;
+}
+
+/* For superposing the two images */
+.cont-img img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    margin-left: 400px;
+    top: 0;
+    left: 0;
+}
+
+/* Adjust the z-index to control the stacking order */
+.cont-img .img1 {
+    z-index: 10;
+}
+
+.cont-img .img2 {
+    z-index: 20;
+    margin-top: -60px; /* Adjust the margin to control the superposition */
+    margin-left: 80px;
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    bottom: 0;
     width: 100%;
+    margin-top: 400px;
 }
+
