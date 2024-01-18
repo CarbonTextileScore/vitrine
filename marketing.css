@@ -165,6 +165,25 @@ body {
     margin-bottom: 10px;
 }
 
+
+.content-img-maquette {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Centrer l'image verticalement */
+}
+
+.content-img-maquette img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    /*margin-right: 40px; /* Marge à droite */
+    margin-left: 5px; /* Ajuste la marge à gauche pour décaler l'image */
+}
+
 .sanction {
     display: flex;
     max-width: 1300px;
