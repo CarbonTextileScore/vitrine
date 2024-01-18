@@ -68,7 +68,7 @@ body {
 }
 
 .content h3 {
-    margin-left : 5%;
+    /*margin-left : 5%;*/
 }
 
 .squares-container {
@@ -91,6 +91,9 @@ body {
     align-items: center;
 
     color : white;
+
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .square p, .square h3 {
@@ -171,4 +174,9 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     width : 45%;
+}
+
+.score-container img {
+    width : 70%;
+    padding: 5%;
 }
