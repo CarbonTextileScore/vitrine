@@ -78,6 +78,11 @@ body {
     background-color: #F8F8F8;
     font-family: 'Michroma', sans-serif;
     overflow-x:hidden;
+
+    background-image: url("assets/marketing-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
 }
 
 .frame {
