@@ -284,12 +284,31 @@ body {
     margin-left: 80px;
 }
 
+.slogan {
+    text-align: center;
+    margin-top: 400px;
+    background-color: #a72424; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 10px; /* Rayon des coins pour obtenir un fond arrondi */
+    padding: 10px; /* Espace à l'intérieur du cadre */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre portée */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slogan p {
+    font-weight: bold;
+    font-size: 24px; /* Ajustez la taille de la police selon vos besoins */
+}
+
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    margin-top: 400px;
+    margin-top: 50px;
 }
 
