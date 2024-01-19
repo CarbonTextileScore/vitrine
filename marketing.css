@@ -185,7 +185,6 @@ body {
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    /* Définir une largeur fixe pour toutes les cartes */
 }
 
 .stat-card img {
@@ -201,7 +200,6 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    /* Centrer l'image verticalement */
 }
 
 .content-img-maquette img {
