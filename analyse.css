@@ -45,15 +45,23 @@ header a:hover {
 }
 
 body {
-    background-color: #F8F8F8;
     font-family: 'Michroma', sans-serif;
-    overflow-x:hidden;
+    overflow-x: hidden;
     margin: 0;
 }
 
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #F8F8F8;
+}
+
 .today-container {
-    /* background-color: #CCCDD6; */
-    background: linear-gradient(180deg, rgba(204,205,214,1) 0%, rgba(248,248,248,1) 100%);;
+    background: linear-gradient(180deg, rgba(204, 205, 214, 0.5) 0%, rgba(248, 248, 248, 0.2) 100%);
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -63,6 +71,7 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
 .content {
     margin-left: 5%;
 }
@@ -71,7 +80,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    width : 50%;
+    width: 50%;
     margin-left: 5%;
 }
 
@@ -86,29 +95,40 @@ body {
     justify-content: center;
     align-items: center;
 
-    color : white;
+    color: white;
 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.square p, .square h3 {
+.square p,
+.square h3 {
     text-align: center;
 }
 
 .square:hover h3 {
-    color : #f21a2c;
+    color: #f21a2c;
 }
 
 .text-container {
     width: 45%;
-    padding : 5%;
+    padding: 5%;
+    text-align: center;
 }
 
 .text-container h3 {
     text-align: center;
 }
 
+.curve-container img {
+    flex: 1;
+    width: 75%;
+    padding-top: 10%;
+}
+
+.text-container h3 {
+    color: #f21a2c;
+}
 
 /*Picture gallery*/
 
@@ -126,8 +146,9 @@ body {
 
 .picture img {
     width: 100%;
-    height: auto;
     transition: transform 0.3s;
+    object-fit: over;
+    height: 100%;
 }
 
 .overlay {
@@ -158,6 +179,7 @@ body {
 .picture:hover .overlay {
     opacity: 1;
 }
+
 /* end of image gallery */
 
 .worldMap-container img {
@@ -169,11 +191,27 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    width : 45%;
+    width: 45%;
 }
 
 .score-container img {
-    width : 70%;
+    width: 70%;
     padding: 5%;
 }
 
+.sources-container {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+footer {
+    background-color: #F8F8F8;
+    padding: 5%;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+}

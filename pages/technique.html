@@ -4,9 +4,26 @@
 <head>
     <title>Technique</title>
     <link rel="stylesheet" href="../technique.css">
+    <meta charset="utf-8">
 </head>
 
 <body>
+
+    <script>
+        window.
+            onload
+            = function () {
+                Particles.
+                    init
+                    ({
+                        selector:
+                            '.background',
+                        resize: true
+
+                    });
+            };
+    </script>
+
     <header>
         <a href="../index.html"><img src="../assets/logoC50.png" class="logo-img"></a>
         <nav>
@@ -18,15 +35,51 @@
             </ul>
         </nav>
     </header>
-    
+
+    <h1>Les dessous du projet</h1>
+
     <div class="content">
-        <h2>Architecture technique</h2>
-        <p>Notre projet se divise en 2 :</p>
+        <h2>L'Equipe</h2>
+        <div class="team-container">
+            <ul>
+                <li class="column1">Hamza Ahmyttou</li>
+                <li class="column1">Romain Cailly</li>
+                <li class="column1">Jade Christien</li>
+                <li class="column1">Felix Daune </li>
+                <li class="column1">Arthur Debeaupte</li>
+                <li class="column2">Emeline Flicourt</li>
+                <li class="column2">Sarra Khelifi</li>
+                <li class="column2">Valentin Lebarbanchon</li>
+                <li class="column2">Tanguy Steimetz</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Architecture de la solution</h2>
+        <img src="../assets/technical-scheme.png" alt="technical scheme" />
+    </div>
+
+    <div class="content">
+        <h2>Apercu de la solution</h2>
+        <h3>Insérer scrren shots du front.</h3>
+    </div>
+
+    <div class="content">
+        <h2>Documentation</h2>
         <ul>
             <li><a href="https://github.com/CarbonTextileScore/front">Front end</a></li>
             <li><a href="https://github.com/CarbonTextileScore/api">Back end</a></li>
         </ul>
     </div>
+
+    <footer>
+        <img class="logo" src="../assets/ensi.png" alt="Ensi Caen">
+        <img class="logo" src="../assets/dome.png" alt="Le dome">
+    </footer>
+
+    <canvas class="background"></canvas>
+    <script src="../particles/particles.min.js"></script>
 </body>
 
 </html>
