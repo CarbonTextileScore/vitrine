@@ -61,7 +61,8 @@
         <p>L’application offre à l’utilisateur un tableau de bord interactif qui lui permet de surveiller son quota
             personnel, ainsi que ceux des membres de sa famille et de sa ville.<br>
             Il a également la possibilité de suivre ses actions récentes, y compris les achats et ventes de vêtements,
-            ainsi que les modifications apportées à son quota. De plus, il peut consulter les sanctions actuellement
+            ainsi que les modifications apportées à son quota.
+            <br>De plus, il peut consulter les sanctions actuellement
             imposées à sa ville en cas de dépassement d’un certain quota.<br>
             <br>
             Si le quota de l’utilisateur dépasse une certaine limite, une alerte est générée, informant l’utilisateur de
@@ -123,7 +124,7 @@
                     <tr>
                         <td>POST</td>
                         <td>/login</td>
-                        <td>JSON<br>Champ :<br> username : String,<br> password: String<br></td>
+                        <td>JSON<br>Champs :<br>&emsp;username : String,<br>&emsp;password: String<br></td>
                         <td>Body : vide<br>Header : ‘Token’ :‘Bearer token’</td>
                     </tr>
                     <tr>
@@ -131,7 +132,7 @@
                         <td>/product</td>
                         <td>Header ‘Token’<br></td>
                         <td><br><br>Body :<br>
-                            List de produits, champ :(<br>
+                            List de produits, champs :(<br>
                             name: String, <br>&emsp;Price: Float,<br> &emsp;countryName: String,<br> &emsp;description: String,<br> &emsp;quota: int,<br> &emsp;isSecondHand: boolean<br>)</td>
                     </tr>
                     <tr>
@@ -148,20 +149,20 @@
                         <td>GET</td>
                         <td>/training/videos</td>
                         <td>Header ‘Token’<br></td>
-                        <td><br><br>Body :<br>Liste de Champs : (<br>&emsp;id: int,<br>&emsp;name: String<br>&emsp;video: String (URL),<br>
+                        <td><br><br>Body :<br>Champs : (<br>&emsp;id: int,<br>&emsp;name: String<br>&emsp;video: String (URL),<br>
                             &emsp;categoryId: int,<br> &emsp;score: int,<br> &emsp;userFullName: String (@ref youtube)<br>)</td>
                     </tr>
                     <tr>
                         <td>GET</td>
                         <td>/training/categories</td>
                         <td>Header ‘Token’<br></td>
-                        <td><br><br>Body : <br>Liste de Champs : (<br>&emsp;id: int,<br>&emsp;name: int<br>)</td>
+                        <td><br><br>Body : <br>Champs : (<br>&emsp;id: int,<br>&emsp;name: int<br>)</td>
                     </tr>
                     <tr>
                         <td>GET</td>
                         <td>/user/retribution</td>
                         <td>Header ‘Token’<br></td>
-                        <td><br><br>Body :<br>List de Champs (<br>&emsp;id: int,<br>&emsp;label: String,<br>&emsp;quota: int,<br>&emsp;TIGName:
+                        <td><br><br>Body :<br>Champs (<br>&emsp;id: int,<br>&emsp;label: String,<br>&emsp;quota: int,<br>&emsp;TIGName:
                             String<br>)</td>
                     </tr>
                 </tbody>
@@ -180,6 +181,7 @@
 
     <div class="content">
         <h2>Apercu de la solution</h2>
+        <p>Voici des captures d'écran prises lors de l'utilisation de notre application :</p>
         <div class="screenshot-container">
             <img src="../assets/screenshot1.png" alt="solution screenshot">
         </div>
@@ -192,7 +194,7 @@
     </div>
 
     <div class="content">
-        <h2>Sources</h2>
+        <h2>Code source</h2>
         <ul>
             <li><a href="https://github.com/CarbonTextileScore/front">Front end</a></li>
             <li><a href="https://github.com/CarbonTextileScore/api">Back end</a></li>
