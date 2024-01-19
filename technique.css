@@ -54,3 +54,15 @@ body {
 .content {
     margin-left: 5%;
 }
+
+footer {
+    background-color: #F8F8F8;
+    padding: 5%;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+}
