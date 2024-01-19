@@ -73,7 +73,6 @@ footer {
     background-color: #F8F8F8;
 }
 
-
 .content {
     max-width: 60%;
     margin: 0 auto;
@@ -81,7 +80,24 @@ footer {
     box-sizing: border-box;
 }
 
+h1 {
+    margin-left: 5%;
+}
+
 .content img {
     max-width: 50%;
     height: auto;
+}
+
+.team-container ul {
+    padding: 0;
+    column-count: 2;
+}
+
+.column1 {
+    break-inside: avoid-column;
+}
+
+.column2 {
+    break-inside: avoid-column;
 }
