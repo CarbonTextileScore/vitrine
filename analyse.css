@@ -13,7 +13,7 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     top: 0;
-    z-index: 1;
+    z-index: 100;
     left: 0;
     right: 0;
     height: 50px;
@@ -214,4 +214,31 @@ footer {
     width: 100px;
     height: auto;
     margin: 0 10px;
+}
+
+.shirt-container img {
+    width: 15%
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #cce5ff;
 }
