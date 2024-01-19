@@ -13,7 +13,7 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     top: 0;
-    z-index: 0;
+    z-index: 1;
     left: 0;
     right: 0;
     height: 50px;
@@ -84,14 +84,36 @@ h1 {
     margin-left: 5%;
 }
 
-.content img {
+.scheme-container img {
     max-width: 50%;
+    height: auto;
+}
+
+.database-container img {
+    max-width: 100%;
     height: auto;
 }
 
 .team-container ul {
     padding: 0;
     column-count: 2;
+}
+
+.table-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.table-container tr {
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+    display: table-row;
 }
 
 .column1 {
@@ -101,3 +123,9 @@ h1 {
 .column2 {
     break-inside: avoid-column;
 }
+
+.screenshot-container img {
+    max-width: 100%;
+    height: auto;
+}
+

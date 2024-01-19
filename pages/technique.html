@@ -32,6 +32,7 @@
                 <li><a href="./marketing.html">Marketing</a></li>
                 <li><a href="./analyse.html">Analyse</a></li>
                 <li><a href="./technique.html">Technique</a></li>
+                <li><a href="http://192.93.212.213:8443" target="_blank">LIEN VERS L'APPLICATION</a></li>
             </ul>
         </nav>
     </header>
@@ -50,23 +51,150 @@
                 <li class="column2">Emeline Flicourt</li>
                 <li class="column2">Sarra Khelifi</li>
                 <li class="column2">Valentin Lebarbanchon</li>
-                <li class="column2">Tanguy Steimetz</li>
+                <li class="column2">Tangui Steimetz</li>
             </ul>
         </div>
     </div>
 
     <div class="content">
-        <h2>Architecture de la solution</h2>
-        <img src="../assets/technical-scheme.png" alt="technical scheme" />
+        <h2>Notre application</h2>
+        <p>L’application offre à l’utilisateur un tableau de bord interactif qui lui permet de surveiller son quota
+            personnel, ainsi que ceux des membres de sa famille et de sa ville.<br>
+            Il a également la possibilité de suivre ses actions récentes, y compris les achats et ventes de vêtements,
+            ainsi que les modifications apportées à son quota.
+            <br>De plus, il peut consulter les sanctions actuellement
+            imposées à sa ville en cas de dépassement d’un certain quota.<br>
+            <br>
+            Si le quota de l’utilisateur dépasse une certaine limite, une alerte est générée, informant l’utilisateur de
+            la situation et l’incitant à prendre des mesures correctives.<br>
+            <br>
+            Par ailleurs, l’application web comprend une section dédiée à la formation. Ici, l’utilisateur peut accéder
+            à des cours publiés par d’autres utilisateurs sur divers sujets, tels que la création, le recyclage et la
+            réutilisation de vêtements.<br>
+            Enfin, l’application dispose d’une place de marché où les utilisateurs peuvent acheter et vendre des
+            vêtements. Cette fonctionnalité offre à l’utilisateur la possibilité de réduire son quota, ou du moins de ne
+            pas l’augmenter, en achetant des vêtements d’occasion.
+        </p>
+    </div>
+
+    <div class="content">
+        <h2>Architecture</h2>
+        <p>
+            Ce projet est une application web complète qui utilise une architecture à trois niveaux : base de données,
+            backend et frontend.<br>
+            <br>
+            La base de données est alimentée par Postgres, un système de gestion de base de données relationnelle open
+            source qui est largement reconnu pour sa robustesse et sa fiabilité.<br>
+            <br>
+            Le backend est construit en utilisant le framework Spring en Java pour créer une API REST. Il utilise
+            également Spring Boot pour faciliter la configuration et le déploiement, et Spring Security pour gérer
+            l’authentification et l’autorisation. De plus, il utilise JWT (JSON Web Tokens) pour la livraison et la
+            vérification des tokens, dans le but de renforcer la sécurité des communications entre le client et le
+            serveur.<br>
+            <br>
+            Le frontend est développé en utilisant Angular, un framework JavaScript puissant et flexible pour la
+            création d’applications web interactives.
+        </p>
+
+        <div class="scheme-container">
+            <img src="../assets/technical-scheme.png" alt="technical scheme" />
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>L'API</h2>
+        <p>Le backend est construit en utilisant le framework Spring en Java pour créer une API REST.<br>
+            Il utilise également Spring Boot pour faciliter la configuration et le déploiement, et Spring Security pour
+            gérer l’authentification et l’autorisation.<br>
+            De plus, il utilise JWT (JSON Web Tokens) pour la livraison et la vérification des tokens, dans le but de
+            renforcer la sécurité des communications entre le client et le serveur.
+        </p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mapping</th>
+                        <th>Endpoint</th>
+                        <th>Ce qu’il attend</th>
+                        <th>Ce qu’il retourne</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>POST</td>
+                        <td>/login</td>
+                        <td>JSON<br>Champs :<br>&emsp;username : String,<br>&emsp;password: String<br></td>
+                        <td>Body : vide<br>Header : ‘Token’ :‘Bearer token’</td>
+                    </tr>
+                    <tr>
+                        <td>GET</td>
+                        <td>/product</td>
+                        <td>Header ‘Token’<br></td>
+                        <td><br><br>Body :<br>
+                            List de produits, champs :(<br>
+                            name: String, <br>&emsp;Price: Float,<br> &emsp;countryName: String,<br> &emsp;description: String,<br> &emsp;quota: int,<br> &emsp;isSecondHand: boolean<br>)</td>
+                    </tr>
+                    <tr>
+                        <td>GET</td>
+                        <td>/user/dashboard</td>
+                        <td>Header ‘Token’<br></td>
+                        <td><br><br>Body : <br>Champs : (<br>&emsp;name: String, <br>&emsp;lastname: String,<br>&emsp;gender: String (M, F),<br>
+                            &emsp;birthdate: String (dd/MM/yyyy),<br>&emsp;age: int,<br>&emsp;personalQuota: int,<br>&emsp;invoices (quota: int, date:
+                            String (dd/MM/yyyy),<br>&emsp;productPrice: Float, <br>&emsp;productQualifier: String (ACHAT | VENTE type
+                            produit)), <br>&emsp;City: int (quota),<br> &emsp;familyMembers (name: String, birthdate: String (dd/MM/yyyy),<br>
+                            &emsp;gender: String (M, F),<br>&emsp; personnalQuota: int, age: int),<br> &emsp;familyQuota : int<br>)</td>
+                    </tr>
+                    <tr>
+                        <td>GET</td>
+                        <td>/training/videos</td>
+                        <td>Header ‘Token’<br></td>
+                        <td><br><br>Body :<br>Champs : (<br>&emsp;id: int,<br>&emsp;name: String<br>&emsp;video: String (URL),<br>
+                            &emsp;categoryId: int,<br> &emsp;score: int,<br> &emsp;userFullName: String (@ref youtube)<br>)</td>
+                    </tr>
+                    <tr>
+                        <td>GET</td>
+                        <td>/training/categories</td>
+                        <td>Header ‘Token’<br></td>
+                        <td><br><br>Body : <br>Champs : (<br>&emsp;id: int,<br>&emsp;name: int<br>)</td>
+                    </tr>
+                    <tr>
+                        <td>GET</td>
+                        <td>/user/retribution</td>
+                        <td>Header ‘Token’<br></td>
+                        <td><br><br>Body :<br>Champs (<br>&emsp;id: int,<br>&emsp;label: String,<br>&emsp;quota: int,<br>&emsp;TIGName:
+                            String<br>)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Base de données</h2>
+        <p>Voici le schéma de notre base de données :</p>
+
+        <div class="database-container">
+            <img src="../assets/database.png" alt="Schéma base de données">
+        </div>
     </div>
 
     <div class="content">
         <h2>Apercu de la solution</h2>
-        <h3>Insérer scrren shots du front.</h3>
+        <p>Voici des captures d'écran prises lors de l'utilisation de notre application :</p>
+        <div class="screenshot-container">
+            <img src="../assets/screenshot1.png" alt="solution screenshot">
+        </div>
+        <div class="screenshot-container">
+            <img src="../assets/screenshot2.png" alt="solution screenshot">
+        </div>
+        <div class="screenshot-container">
+            <img src="../assets/screenshot3.png" alt="solution screenshot">
+        </div>
     </div>
 
     <div class="content">
-        <h2>Documentation</h2>
+        <h2>Code source</h2>
         <ul>
             <li><a href="https://github.com/CarbonTextileScore/front">Front end</a></li>
             <li><a href="https://github.com/CarbonTextileScore/api">Back end</a></li>
