@@ -4,9 +4,26 @@
 <head>
     <title>Analyse</title>
     <link rel="stylesheet" href="../analyse.css">
+    <meta charset="utf-8">
 </head>
 
 <body>
+
+    <script>
+        window.
+            onload
+            = function () {
+                Particles.
+                    init
+                    ({
+                        selector:
+                            '.background',
+                        resize: true
+
+                    });
+            };
+    </script>
+
     <header>
         <a href="../index.html"><img src="../assets/logoC50.png" class="logo-img"></a>
         <nav>
@@ -212,7 +229,15 @@
             <p>Si vous voulez plus de renseignements sur ce sujet, nous vous conseillons le site de l'ADEME.</p>
         </div>
     </div>
+
+    <footer>
+        <img class="logo" src="../assets/ensi.png" alt="Ensi Caen">
+        <img class="logo" src="../assets/dome.png" alt="Le dome">
+    </footer>
+
+    <canvas class="background"></canvas>
+    <script src="../particles/particles.min.js"></script>
+
 </body>
 
 </html>
-
